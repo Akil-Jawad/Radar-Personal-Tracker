@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_tracking"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/basicColor"
+    tools:context=".TrackingActivity">
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Start Tracking"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button_tracking_effect"/>
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:text="Stop Tracking"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button_tracking_effect"/>
+
+
+</LinearLayout>

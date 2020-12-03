@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TrackingHistoryActivity">
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Last day History"-->
+        <!--android:textColor="@color/colorBlack"-->
+        <!--android:textSize="16sp"-->
+        <!--android:padding="10dp"-->
+        <!--android:gravity="center"-->
+        <!--android:background="@drawable/listviewborder"/>-->
+    <!--<SearchView-->
+        <!--android:id="@+id/search_in_history"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="0dp"-->
+        <!--android:layout_marginTop="0dp"-->
+        <!--android:iconifiedByDefault="false"-->
+        <!--android:queryHint="Search">-->
+        <!--<requestFocus/>-->
+    <!--</SearchView>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="@drawable/searchviewbox">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Search By"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <Spinner
+            android:id="@+id/sp_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+            style="@style/Widget.AppCompat.Spinner.DropDown" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="10">
+        <EditText
+            android:id="@+id/et_history"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/inputs_background"
+            android:inputType="none" />
+        <ImageButton
+            android:id="@+id/date_time"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_date_range_black_24dp"
+            android:background="@color/colorBlue" />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:text="Search"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button_search"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+    <ListView
+        android:id="@+id/histList"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

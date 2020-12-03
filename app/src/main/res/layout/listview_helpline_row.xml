@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:autoLink="phone"
+    android:linksClickable="true"
+    android:background="@drawable/listview_press_effect">
+    <TextView
+        android:id="@+id/tv_helpline_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Helpline Name"
+        android:textSize="20sp"
+        android:autoLink="phone"
+        android:linksClickable="true"
+        android:textColor="@color/basicColor"
+        android:textStyle="bold"
+        android:paddingStart="5dp"/>
+    <TextView
+        android:id="@+id/tv_helpline_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Helpline number"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="normal"
+        android:paddingStart="5dp"/>
+
+
+</LinearLayout>
